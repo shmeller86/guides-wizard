@@ -5,7 +5,10 @@ if exists curl; then
 else
     apt install curl -y < "/dev/null"
 fi
-curl -s https://api.nodes.guru/logo.sh | bash
+curl -s https://raw.githubusercontent.com/shmeller86/guides-wizard/master/utils/logo.sh | bash
 
-#wget -O go.sh https://raw.githubusercontent.com/shmeller86/guides-wizard/master/go.sh && chmod +x go.sh && ./go.sh
+#wget -O go.sh --progress=bar:force:noscroll https://raw.githubusercontent.com/shmeller86/guides-wizard/master/go.sh >> /dev/null && chmod +x go.sh && ./go.sh
 #curl -s https://raw.githubusercontent.com/shmeller86/guides-wizard/master/go.sh | bash
+
+
+#wget https://raw.githubusercontent.com/shmeller86/guides-wizard/master/go.sh -q --show-progress -O go.sh && chmod +x go.sh && ./go.sh
